@@ -64,9 +64,9 @@ def generate_content_glm():
     application = data.get("application", "GPT")
     
     # 接口API KEY
-    API_KEY = "f97f9018338e3b03545dd2a6ecbb39ba.FgFSzQGENela9iq1"
+    API_KEY = ""
     # 公钥
-    PUBLIC_KEY = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMPty+uGQ/8MiYYqjgYxzKZ20clVnBgSe8RbVfnJ0mAJk3b/xgw90AP9ksTNGthaJM9GrH6H2m3ReOudnSu9tNUCAwEAAQ=="
+    PUBLIC_KEY = ""
     ability_type = "chatglm_qa_6b"
     # 引擎类型
     engine_type = "chatglm_6b"
