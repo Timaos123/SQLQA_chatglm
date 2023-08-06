@@ -216,8 +216,8 @@ def chatGLM(prompt):
     import requests
     import json
 
-    # url = "http://172.2.0.97:6006/beauty_industry_doc_qa"
-    url = "http://172.2.0.97:6006/chatglm/generate_content"
+    # url = "http://127.0.0.1:6006/beauty_industry_doc_qa"
+    url = "http://127.0.0.1:6006/chatglm/generate_content"
 
     payload = json.dumps({
         "prompt":prompt
@@ -226,7 +226,7 @@ def chatGLM(prompt):
         'User-Agent': 'Apifox/1.0.0 (https://www.apifox.cn)',
         'Content-Type': 'application/json',
         'Accept': '*/*',
-        'Host': '172.2.0.97:6006',
+        'Host': '127.0.0.1:6006',
         'Connection': 'keep-alive'
     }
 
