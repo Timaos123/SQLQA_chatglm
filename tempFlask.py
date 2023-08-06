@@ -28,7 +28,7 @@ import zhipuai
 
 app = Flask(__name__)
 api = Api(app)
-openai.api_key="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"
+openai.api_key=""
 
 # 初始化Elasticsearch
 es = Elasticsearch(hosts=["http://127.0.0.1:9200"])
