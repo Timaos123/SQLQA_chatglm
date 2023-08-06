@@ -5,7 +5,7 @@ from transformers import AutoModel,AutoTokenizer
 import tqdm
 
 # 初始化Elasticsearch
-es = Elasticsearch(hosts=["http://47.98.173.193:9200"])
+es = Elasticsearch(hosts=["http://127.0.0.1:9200"])
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # def encode_text(bert_model, bert_tokenizer, text):
