@@ -35,14 +35,14 @@ es = Elasticsearch(hosts=["http://127.0.0.1:9200"])
 
 # 自调用
 def flaskReq(reqUrl,data):
-    url = "http://172.2.0.97:6006{}".format(reqUrl)
+    url = "http://127.0.0.1:6006{}".format(reqUrl)
 
     payload = json.dumps(data)
     headers = {
         'User-Agent': 'Apifox/1.0.0 (https://www.apifox.cn)',
         'Content-Type': 'application/json',
         'Accept': '*/*',
-        'Host': '172.2.0.97:6006',
+        'Host': '127.0.0.1:6006',
         'Connection': 'keep-alive'
     }
 
@@ -347,7 +347,7 @@ def chatGLM(prompt):
     import requests
     import json
 
-#     url = "http://172.2.0.97:6006/beauty_industry_doc_qa"
+#     url = "http://127.0.0.1:6006/beauty_industry_doc_qa"
     url = "http://127.0.0.1:6520/chatglm/generate_content"
 
     payload = json.dumps({
